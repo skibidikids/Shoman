@@ -4,8 +4,8 @@ import fitz  # PyMuPDF
 import os
 
 # --- 設定 ---
-INPUT_DIR = r"C:\Users\user1\Documents\develop\Shouman\診断の手引き"   # 元の860件のPDFが入っているフォルダのパス
-OUTPUT_DIR = r"C:\Users\user1\Documents\develop\Shouman\診断の手引き_加工後" # カット後のPDFを保存するフォルダのパス
+INPUT_DIR = "診断の手引き"
+OUTPUT_DIR = "診断の手引き_加工後"
 TARGET_PHRASE = "関連資料"    # 検索するキーワード（"---関連資料---"など適宜変更してください）
 
 # ページ上端から何ポイント以内なら「ページ丸ごと関連資料」と判定するか（微調整用）
@@ -68,4 +68,5 @@ def process_pdfs():
 if __name__ == "__main__":
     print("処理を開始します...")
     process_pdfs()
+
     print("すべての処理が完了しました！")
